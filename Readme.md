@@ -1,7 +1,7 @@
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Николай Решетов](https://up.htmlacademy.ru/htmlcss/27/user/1218419).
-* Наставник: `Николай Чередник (https://htmlacademy.ru/profile/id867417)`.
+* Наставник: Николай Чередник (https://htmlacademy.ru/profile/id867417).
 
 ---
 
