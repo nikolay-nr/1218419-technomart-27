@@ -1,4 +1,4 @@
-# Личный проект «Техномарт»
+﻿# Личный проект «Техномарт»
 
 * Студент: [Николай Решетов](https://up.htmlacademy.ru/htmlcss/27/user/1218419).
 * Наставник: [Николай Чередник](https://up.htmlacademy.ru/htmlcss/27/user/1867417).
@@ -8,7 +8,7 @@
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
----~
+---~~~~
 
 ### Памятка
 
