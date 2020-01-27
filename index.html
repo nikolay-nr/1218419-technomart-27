@@ -6,48 +6,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header> <!-- В хедере не должно быть section - никогда. Убирай <section></section>, то что между ним не убирай :) -->
+<header>
     <div>
 		<a href="index.html"><h2>Техномарт</h2></a>
-     	     <!--
-            Пробелы не лучший способ отделения тэгов в одной строке.
-             Лучше переносить строки. Пробелы вообще много где - плохо.
-        	 Я тебе советую посмотреть на стили кода, как люди пишут и когда ставят пробелы.
-        	 Эт глобальная тема, я тебе вряд ли доходчиво объясню, но в общем пробелы ставить не нужно, лучше делай пагинацию из пробелов и ВСЁ.
-        	 Надеюсь на этот счёт больше ничего не упустил такого особо важного
-              -->
-		<span>Поиск</span>
-	    	 <!-- Здесь (↑) и далее: аналогично.
-    	     Пробелы в тексте не нужны, иначе браузер их видит и читает.
-       		  Чекай свою структуру через Дев-Консоль и поймёшь раньше и лучше,
-         	 как всё устроено и что тебе нужно, из того, что ты создаёшь, и что - нет)
-         	 -->
-		<a href="#">Закладки</a>
+     		<span>Поиск</span>
+	    	<a href="#">Закладки</a>
 		<a href="#">Корзина</a>
 		<button type="button">Оформить заказ</button>
 	</div>
-         <!--
-         Смотри, ты закрываешь тэги, писав в данном формате: <ТЭГ> </ТЭГ>
-         Посмотри внимательно, какой тэг ты упустил.
-         Только сначала убери внутри тэга, который ты пропустил div.
-         Догадался уже о чём я?)
-         Повнимательнее.
-          -->
-	<div>
+    <div>
 		<div>
 			<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 		</div>
 		<div>
-			<span><a href="tel:+78125550555">+7 (812) 555-05-55</a></span> <!-- Эт я уже просто захотел исправить (добавил пробелы меж цифрами), не парься,    тут всё норм)))) -->
+			<span><a href="tel:+78125550555">+7 (812) 555-05-55</a></span>
 			<p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
 		</div>
 		<div>
 			<button type="button">Войти</button>
-               <!--
-             Пробелы... Эх... Дальше не буду о них говорить, найдёшь сам.
-             Убирать их тоже дальше не буду. Сделаешь эт сам)
-              -->
-			<button type="button">Регистрация</button>
+            <button type="button">Регистрация</button>
 		</div>
 	</div>
 	<div>
@@ -77,20 +54,125 @@
 			</ul>
 		</nav>
 	</div>
-</header> <!-- Здесь я уже увидел, что тут заканчивается. Окей, оставим весь этот момент с хедером на консультацию. Объясню тебе логику разметки. -->
+</header> 
 <main>
+	<section class="main_menu">
+		<div class="main_menu__item">
+			<span>Материалы</span>
+			<span>на любой вкус</span>
+		</div>
+		<div class="main_menu__item">
+			<span>Инструмент</span>
+			<span>На все случаи</span>
+		</div>
+		<div class="main_menu__item">
+			<span>Техника</span> 
+			<span>для стройки</span>
+		</div>
+		<div class="main_menu__item">
+			<span>Скидки 50% </span>
+			<span>На 350 товаров</span>
+		</div>
+		<div class="main_menu__item">
+			<span>Доставка </span>
+			<span>бесплатно</span>
+		</div>
+		<div class="main_menu__slider">
+			<span>Дрели  </span>
+			<span>Соседям на радость!</span>
+			<button class="main_menu__btn" type="button">открыть каталог</button>
+		</div>
+	</section>
+	<section class="popular_goods">
+		<div class="popular_goods__title">
+			<h2>Популярные товары:</h2>
+			<button type="button">все попоулярные товары</button>
+		</div>
+		<div class="popular_goods__item">
+			<img src="img/Perforator_1_items." width="218" height="170" alt="перфоратор">
+			<span>Перфоратор BOSCH BFG 9000</span>
+			<span>32500 Р.</span>
+			<span>25500 Р.</span>
+		</div>
+		<div class="popular_goods__item">
+			<img src="img/Perforator_1_items." width="218" height="170" alt="перфоратор">
+			<span>Перфоратор BOSCH BFG 3000</span>
+			<span>22500 Р.</span>
+			<span>15500 Р.</span>
+		</div>
+		<div class="popular_goods__item">
+			<img src="img/Perforator_1_items." width="218" height="170" alt="перфоратор">
+			<span>Перфоратор BOSCH BFG 6000</span>
+			<span>30500 Р.</span>
+			<span>25500 Р.</span>
+		</div>
+		<div class="popular_goods__item">
+			<img src="img/Perforator_1_items." width="218" height="170" alt="перфоратор">
+			<span>Перфоратор BOSCH BFG 2000</span>
+			<span>15500 Р.</span>
+		</div>
+	</section>
+	<section class="popular_vendor">
+		<div class="popular_vendor__title">
+			<h2>Популярные Производители:</h2>
+			<button type="button">все производители</button>
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="bosh">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="Makita">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="DeWALT">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="Интерскол">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="Hitachi">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="LG">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="AEG">
+		</div>
+		<div class="popular_vendor__item">
+			<img src="img/vendor_item_bosh." width="126" height="37" alt="Metabo">
+		</div>
+	</section>
+	<section class="service">
+		<h2>Сервисы</h2>
+		<p>
+			Сервисы  Хороший интернет-магазин отличается от плохого не только по ценам!
+			мы стараемся изо всех сил, чтобы сделать ваши покупки приятными
+		</p>
+	</section>
+	<section class="delivery">
+		<div class="delivery__block">
+			<ul class="delivery__block__credit">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Кредит</a></li>
+			</ul>
+		</div>
+		<div class="delivery__block__title">
+			<h2>Доставка</h2>
+			<p>Мы с удовольствием доставим ваш товар прямо 
+			к вашему подъезду совершенно бесплатно!
+			Ведь мы неплохо заработаем, 
+			поднимая его на ваш этаж!</p>
+		</div>
+		<div class="delivery__block__logo">
+			<img src="img/" alt="logo_delivery">
+		</div>
+	</section>
 	<section>
 		<section>
 			<h2>Компания «Техномарт»</h2>
 			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит       равнодушными любителей сэкономить на гастарбайтерах.</p>
-		 <!--
-        br - очень плохо. Его можно использовать, только, я считаю, в крайних случаях, когда вёрстка костыльная.
-        Но мы же делаем из тебя робота, а не человека, верно? Ты хочешь быть крутым версталой.
-        Значит не юзай br. Никогда. Вообще. Хотя-я-я, иногда можно, ток чуть, чтоб я не видел)
-        P. S. Лучше стилями задать ширину контейнера или вовсе сделать span элементы, которые будут, как новая строка, чем юзать такой бред, сори, зато будешь знать) -->
-        	<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-    
-         <!--Соблюдай пагинацию. Дочерние одного родителя должны и по пагинации быть на равном уровне. -->
+		   	<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
         	<ul>
         		<li>
         			<a href="#">Деловые линии</a>
@@ -105,20 +187,17 @@
         	<button type="button">Подробнее о компании</button>
 		</section>
 		<section>
-			<h2>Контакты</h2> <!-- Не используй никогда капс. В CSS для этого есть стили определённые -->
-			<p>Вы можете забрать товар сами, заехав в наш офис:</p> <!-- Кхм... Бр-р-р... -->
-        	<!-- <img src="img/map." width="300" height="158" alt="схема проезда"> -->
-        	<!-- Карты через iframe вставляются. Держу в курсе, но пока окей, пусть будет так онли -->
-        	<iframe src="https://yandex.ru/map-widget/v1/-/CGeoJF2t" width="300" height="158" frameborder="1" allowfullscreen="true"></iframe>
-        	<button type="button">Заблудились? Напишите Нам!</button>  <!-- Кааапс, чел, но оке-оке :) -->
+			<h2>Контакты</h2>
+			<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        	<iframe src="https://yandex.ru/map-widget/v1/-/CGeoJF2t" width="300" height="158"></iframe>
+        	<button type="button">Заблудились? Напишите Нам!</button> 
 		</section>
 	</section>
 </main>
 <footer>
-	<div> <!-- Это строка, а не секция, я тебе объясню тоже потом, запиши насчёт секций обсудим потом -->
+	<div>
 		<a href="index.html"><h2>Техномарт</h2></a>
-     <!-- В футере и хедере лучше самые важные группы ссылок вносить в nav, запиши также, обсудим на консультации -->
-		<nav>
+     	<nav>
 			<ul>
 				<li>
 					<a href="#">Компания</a>
@@ -157,7 +236,7 @@
 	</div>
 	<div>
 		<div>
-			<p>© 2010–2019 Компания «Техномарт» Все права защищены</p> <!-- Кхм... Бр-р-р... -->
+			<p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
 		</div>
 		<div>
 			<ul>
@@ -173,9 +252,9 @@
 			</ul>
 		</div>
 		<div>
-			<p> Обратная связь:<!-- Кхм... Бр-р-р... -->
+			<p> Обратная связь:
 			<a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a> </p>
-			<p>Разработано — <!-- Кхм... Бр-р-р... -->
+			<p>Разработано — 
 			<a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru </a></p>
 		</div>
 
